@@ -23,7 +23,7 @@ adj_matrix = [
 G = nx.Graph()
 for i in range(len(adj_matrix)):
     for j in range(len(adj_matrix[i])):
-        if adj_matrix[i][j] == 1:
+        if adj_matrix[i][j] == 7:
             G.add_edge(i, j)
 
 # Визуализация графа
