@@ -79,7 +79,7 @@ def run_analysis(ode_function, a, b, h, y0, title, method_type):
     
     plt.title(f'Графік розв\'язку ЗДР:\n{title}\n({method_name})', fontsize=14)
     plt.xlabel('x')
-    plt.ylabel('y')
+
     plt.grid(True)
     plt.legend()
     plt.show()
