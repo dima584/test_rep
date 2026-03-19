@@ -1,0 +1,1 @@
+t = np.linspace(0, num_cycles* cycle_len, num_cycles*fs)
