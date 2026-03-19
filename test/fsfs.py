@@ -1,2 +1,2 @@
-print('pusgh')
+print('pusgefsfsgsdggggggh')
 іапвавапвппп
