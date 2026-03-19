@@ -5,7 +5,7 @@ import math
 class GoldenSectionApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Метод Золотого Перетину")
+        self.root.title("Метод Золотого Перетину(BUG FIXED)")
         self.root.geometry("900x600")
         input_frame = ttk.LabelFrame(root, text="Вхідні дані", padding="10")
         input_frame.pack(fill="x", padx=10, pady=5)
