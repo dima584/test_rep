@@ -22,6 +22,10 @@ from PIL import Image
 from typing import Callable, Dict, Any, Awaitable
 from aiogram.types import Message
 import time
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # --- БЕЗПЕЧНИЙ ІМПОРТ CRYPTOBOT ---
 try:
@@ -348,7 +352,7 @@ def get_text(lang: str, key: str) -> str:
     return TRANSLATIONS.get(lang, TRANSLATIONS["ru"]).get(key, key)
 
 # --- НАСТРОЙКИ ---
-genai.configure(api_key="AIzaSyDXQjiQErpgpIQPasv0rmCIdUPWfHOE9aQ")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel('models/gemini-3-flash-preview') 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
